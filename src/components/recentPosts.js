@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+import postsReducer from '../reducers/postsReducer';
 
 import Post from './post';
 
