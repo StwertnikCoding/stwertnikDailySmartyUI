@@ -38,13 +38,14 @@ class Post extends Component {
     render() {
         if (this.props.type==='recent') {
             return (
-                <ul className="results-posts">
-                    <div className="results-post__wrapper">
-                        <div className="results-posts__topics">
-                            {this.renderTopics()}
-                        </div>
+                <li className="recent-post">
+                    <div className="recent-post__title">
+                        <a href={this.props.url_for_post}>{this.props.title}</a>
                     </div>
-                </ul>
+                    <div className="recent-post__topics">
+                        {this.renderTopics()}
+                    </div>
+                </li>
 
             )
         } else if (this.props.type==='result') {
