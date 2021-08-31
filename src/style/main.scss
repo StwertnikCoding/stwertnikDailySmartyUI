@@ -11,15 +11,11 @@
     justify-content: center;
 }
 
-.home {
-    height: 100vh;
-    width: 66vw;
-    
-    display: grid;
-    align-content: space-around;
 
-    // grid-template-rows: 1fr 2fr 1fr;
-}
+
+
+
+
 
 .logo-main,
 .recent-posts 
@@ -37,7 +33,12 @@ ul {
 $color-gray-one: #666666;
 $color-gray-two: #b3b3b3;
 $color-blue-one: #0079ff;
+$color-blue-two: #0f60bd;
 
+
+@import './mixins.scss';
 @import './searchBar.scss';
 @import './recentPosts.scss';
 @import './post.scss';
+@import './home.scss';
+@import './results.scss';
